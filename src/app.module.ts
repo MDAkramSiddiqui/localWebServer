@@ -12,13 +12,7 @@ import { FileController } from './modules/file/file.controller';
 
 @Module({
   imports: [DashboardModule, UserModule, AuthModule, FileModule],
-  controllers: [
-    AppController,
-    AuthController,
-    UserController,
-    DashboardController,
-    FileController,
-  ],
-  providers: [AppService],
+  controllers: [AppController, AuthController, UserController, DashboardController, FileController],
+  providers: [AppService]
 })
 export class AppModule {}
